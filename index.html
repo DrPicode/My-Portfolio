@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Mathis Wauters CV Resume Portfolio Linkedin Website Internet EN">
+  <meta name="description" content="Welcome to the Interactive CV of Mathis WAUTERS !">
+  <title>Mathis WAUTERS - Resume</title>
+  <meta property="og:title" content="Mathis WAUTERS - CV">
+  <meta property="og:description" content="Welcome to the Interactive CV of Mathis WAUTERS !">
+  <meta property="og:image" content="./assets/images/me.ico">
+  <meta property="og:url" content="http://en.mathiswauters.fr">
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/me.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" onclick="history.go(0);">
+          <img src="./assets/images/me.png" alt="Mathis Wauters" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mathis Wauters">Mathis Wauters</h1>
+
+          <p class="title">Student IT engineering</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:wautersmathis@outlook.com">
+                <address>wautersmathis @ outlook.com</address>
+              </a>
+
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+033615604908" class="contact-link">+33 6 15 60 49 08</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+              <span class="contact-link" id="age"></span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Le Taillan Médoc, Gironde, FRANCE</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mathiswauters/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/DrPicode" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://soundcloud.com/mathis-wauters" class="social-link">
+              <ion-icon name="logo-soundcloud"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About Me</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/images/Mathis_WAUTERS_CV_EN.pdf" class="navbar-link" target="_blank">Download CV</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://mathiswauters.fr" class="navbar-link">FR</a>
+          </li>
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about me">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <div class="about-text">
+          <p>
+            Hello, my name is <b>Mathis</b>, I am <b id="age1"></b> and I study at <b>CESI engineering school</b> in
+            Bordeaux in <b>computer science</b>.
+            I am passionate about <b>computers</b> and <b>high tech</b>. I am also very interested in new technologies,
+            aviation and digital creations such as <b>photography</b>, <b>video</b> and <b>music</b>.
+          </p>
+
+          <p>
+            I am <b>open-minded</b>, <b>dynamic</b>, and <b>creative</b>. I am also very <b>curious</b> and I like to
+            learn <b>new things</b>.
+            I hope that you will be able to discover my personality through this website, by discovering some of my
+            digital creations and experiences.
+          </p>
+        </div>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Learn about my...</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item" data-nav-link="resume">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/001-cv.png" alt="cv icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Professional experiences</h4>
+
+                <p class="service-item-text">
+                  Check out my CV and the missions I have accomplished.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-nav-link="portfolio">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/experience.png" alt="exp icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Personal experiences</h4>
+
+                <p class="service-item-text">
+                  Discover my passions, my interests, and the projects I have worked on.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-nav-link="resume">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/002-diplm.png" alt="cert icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Education / Qualifications</h4>
+
+                <p class="service-item-text">
+                  Learn more about my career path and my diplomas since middle school until today.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" data-nav-link="portfolio">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/003-contenu-digital.png" alt="folder icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital productions</h4>
+
+                <p class="service-item-text">
+                  Surf on my photos, my severals projects and my musical productions.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/L_SAGE_Bright_Green.png" alt="Sage" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Karine B.</h4>
+                <time class="testimonials-text" datetime="2023-04-14"><b>14 April, 2023</b></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    We were very satisfied with Mathis' work. He validated all the objectives of the course, and on
+                    time! He even went beyond what was asked of him.
+                    He integrated perfectly into the company and his behaviour was exemplary.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/SUEZ_logo.png" alt="SUEZ" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Didier J.</h4>
+                <time class="testimonials-text" datetime="2022-07-15"><b>15 July, 2022</b></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Within our company, Mathis has acquired skills in project management.
+                    He fulfilled his mission with strength of proposals, methodology and involvement and was
+                    particularly recognized by the whole team and superiors for his availability and his
+                    professionalism.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/ATERM.png" alt="A.T.E.R.M" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Stephane B.</h4>
+                <time class="testimonials-text" datetime="2017-12-08"><b>08 December, 2017</b></time>
+
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Despite the fact that this was his first internship, Mathis was able to integrate very easily into
+                    the company. He has shown a great ability to understand what is required of him. This strength has
+                    enabled him to progress autonomously in the missions he has accomplished.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/L_SAGE_Bright_Green.png" alt="Sage" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Modal</h4>
+
+              <div data-modal-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tenetur tempora natus, itaque autem
+                  rerum, incidunt similique odio maiores praesentium voluptatem pariatur est obcaecati architecto,
+                  commodi labore eveniet modi qui!
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Computer Engineering Diploma</h4>
+
+              <span>2020 — 2025 | CESI Engineering School</span>
+
+              <p class="timeline-text">
+                CESI engineering school is based on the "Problem Based Learning" pedagogy. I am actually in the computer
+                science speciality and I am preparing for the engineering diploma in computer science engineering.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Scientific Baccalaureate</h4>
+
+              <span>2017 — 2020 | Lycée Sud Médoc</span>
+
+              <p class="timeline-text">
+                When I was in high school, I prepared my scientific baccalaureate, option Engineering Sciences and
+                Computer Sciences. I obtained it with honours.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Digital Marketing Fundamentals Certification</h4>
+
+              <span>June 2022 | Google</span>
+
+              <p class="timeline-text">
+                In my spare time, I took a Google certification on digital marketing. After a 40 hours training in
+                autonomy, I obtained the certification identified by : TNA 9DU 5NH
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Aeronautical initiation certificate</h4>
+
+              <span>2019 — 2020 | Lesparre Médoc aerodrome</span>
+
+              <p class="timeline-text">
+                Being passionate about aviation, I passed my aeronautical initiation certificate. After having learned
+                the theory, I had the chance to fly 2 times Robin DR-400.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiences</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">BI Developer Trainee</h4>
+
+              <span>January 2023 — April 2023 | SAGE</span>
+
+              <p class="timeline-text">
+                - Implementation of tools for monitoring R&D activity and products.
+              </p>
+              <p class="timeline-text">
+                - Creation of KPIs with Jira API.
+              </p>
+              <p class="timeline-text">
+                - Development of Powershell & Jenkins scripts for automatisation.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Trainee BI engineer</h4>
+
+              <span>April 2022 — July 2022 | SUEZ</span>
+
+              <p class="timeline-text">
+                - Consolidation and reorganisation of DATA.
+              </p>
+              <p class="timeline-text">
+                - Creation of automated Power BI dashboards to track continuous improvement.
+              </p>
+              <p class="timeline-text">
+                - Construction of training support and implementation of Power BI training for SUEZ teams
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Customer Service Manager</h4>
+
+              <span>March 2021 — August 2022 | Carrefour</span>
+
+              <p class="timeline-text">
+                - Training of new cashiers.
+              </p>
+              <p class="timeline-text">
+                - Preparation and delivery of orders.
+              </p>
+              <p class="timeline-text">
+                - Stock management and replenishment.
+              </p>
+              <p class="timeline-text">
+                - Baker and bakery trainer.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">WIX Website trainer</h4>
+
+              <span>September 2018 — July 2020 | ERASMUS +</span>
+
+              <p class="timeline-text">
+                - Pilot trainer for the creation of CVs and websites on Wix.
+              </p>
+              <p class="timeline-text">
+                - Awareness raising on food waste.
+              </p>
+              <p class="timeline-text">
+                - Language trip (English & Spanish) to Badajoz in Spain.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Volunteer</h4>
+
+              <span>November 2017 | French Red Cross</span>
+
+              <p class="timeline-text">
+                - Collection of toys and clothes for children.
+              </p>
+              <p class="timeline-text">
+                - Food distribution in supermarkets.
+              </p>
+              <p class="timeline-text">
+                - Organisation of a charity show.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">3d Modelling Traineer</h4>
+
+              <span>December 2016 | A.T.E.R.M</span>
+
+              <p class="timeline-text">
+                - Modeling elements for Rafale aircraft on Catia V5.
+              </p>
+              <p class="timeline-text">
+                - Drafting and study of specifications.
+              </p>
+              <p class="timeline-text">
+                - 1st internship in a company.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">English</h5>
+                <data value="740">740 / 990 (B1)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 73%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Spanish</h5>
+                <data value="50">50% (A2)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Front</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Back</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Software development</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Network (CCNA 1)</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Music</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Video</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Photography</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <div class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </div>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Music</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Video</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Photography</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="music">
+              <a href="https://mood-dj.fr" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mood.png" alt="DJ" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DJ | Producer</h3>
+
+                <p class="project-category">Music</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="music">
+              <a href="https://rtm33.fr/emissions/saturday-drive-23" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/radio.png" alt="Radio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Radio Presenter</h3>
+
+                <p class="project-category">Music</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="photography">
+              <a href="https://www.instagram.com/m_photograph_w/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/photo.png" alt="photo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Urban Photographer</h3>
+
+                <p class="project-category">Photography</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="development">
+              <a href="https://github.com/DrPicode" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/github.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">My Github Projects</h3>
+
+                <p class="project-category">Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="development">
+              <a href="https://github.com/DrPicode/Nternship" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Nternship.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nternship</h3>
+
+                <p class="project-category">Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="development">
+              <a href="https://cv.mathiswauters.fr" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/RainbowCV.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rainbow Resume</h3>
+
+                <p class="project-category">Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="development">
+              <a href="https://github.com/DrPicode/EasySave" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/EasySave.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EasySave</h3>
+
+                <p class="project-category">Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="development">
+              <a href="https://github.com/DrPicode/Inventory-Manager" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Inventory.png" alt="github" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Inventory Manager</h3>
+
+                <p class="project-category">Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video">
+              <a href="https://youtu.be/AtEO1GSRR3A" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blink.png" alt="blink" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Don't Blink</h3>
+
+                <p class="project-category">Video</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <header>
+          <br>
+          <h2 class="h3 article-title">Personal Experiences</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+
+              <figure class="project-img">
+                <img src="./assets/images/Folkestone.png" alt="Trip" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Language travel England</h3>
+              <p class="project-category">Folkestone (GB)</p>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://airfrancevirtuel.com/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/AFR.png" alt="Ivao" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Virtual Air France Pilot</h3>
+                <p class="project-category">Aviation</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://www.ivao.aero/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/IVAO.png" alt="Ivao" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Virtual Air Traffic Controller IVAO</h3>
+                <p class="project-category">Aviation</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <figure class="project-img">
+                <img src="./assets/images/Robin.png" alt="Robin" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Piloting Robin DR-400</h3>
+              <p class="project-category">Aviation</p>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://www.cesi.fr/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/CESI.png" alt="CESI" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CESI Ambassador</h3>
+                <p class="project-category">CESI</p>
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://www.girondins.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/FCGB.png" alt="FCGB" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Soccer Supporter</h3>
+                <p class="project-category">Girondins de Bordeaux</p>
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+        <section class="skill">
+          <br>
+
+          <h3 class="h3 skills-title">Interests</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Computer Science</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Music</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Aviation</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Soccer</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tennis</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Photography</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
